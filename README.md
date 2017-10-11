@@ -1,5 +1,5 @@
 # weibo-supervisor-jsCrawler
-用于采集“微博监督员”的采集器，js版。
+用于采集 “[微博监督员](http://weibo.com/p/1006066264005608/follow)” 的采集器，js版。
 
 # 使用方式
 1. 打开 Chrome 浏览器。
@@ -26,3 +26,9 @@ https://github.com/yu961549745/WeiboBlackList
 本插件初衷是技术交流，不是为了解决 “收集微博监督员账号” 的问题。
 
 > **我爱我的祖国，坚决用户党的政策。**
+
+# Features
+
+- 考虑到 “微博监督员” 的粉丝不一定都有那个 “蓝色勋章”，避免误采，插件会在粉丝列表中先找到 “蓝色勋章”，然后再找 uid。
+- 采集耗时很短，打开在 5 秒左右。
+- 据说可以配合这个东西使用：https://github.com/overtrue/weibo-dogs-killer
