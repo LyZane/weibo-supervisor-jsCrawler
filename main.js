@@ -12,7 +12,6 @@ function crawl(){
 			return;
 		}
 		console.log("正在采集第 "+page+" 页...");
-		page++;
 
 		var list = document.querySelectorAll(".icon_supervisor");
 		for(var i = 0; i < list.length;i++){
@@ -23,10 +22,12 @@ function crawl(){
 			count++;
 		}
 		console.log("第 "+page+" 页采集完毕。");
+		page++;
+		
 		if(page < 6){
 			document.querySelector(".page.next").click();
 		}else{
-      clearInterval(timer);
+			clearInterval(timer);
 			console.info("采集完毕，共获取到 uid "+count +" 个：\n"+result);
 		}
 		
